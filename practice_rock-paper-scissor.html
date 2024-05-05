@@ -3,59 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rps.css">
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <h1 style="margin-bottom: 100px; margin-top: 100px;">
+    <h1 class="Title" style="margin-bottom: 100px; margin-top: 100px;">
         Rock Paper Scissors
 
     </h1>
+    <div class="button">
+        const computermove;
+        let result='';
+        <button class="buttons" onclick="
+        computermove=computerMove();
+        
+        if(computermove==='rock'){
+            result='Tie';
+        }
+        else if(computermove==='paper'){
+            result='You lost.';
+        }
+        else if(computermove==='scissors'){
+            result='You win.';
+        }
+        alert(`You picked Rock. Computer picked ${computermove}. ${result}`);"
+        > Rock </button>
 
-    <button onclick="
-    const computermove=computerMove();
-    let result='';
-    if(computermove==='rock'){
-        result='Tie';
-    }
-    else if(computermove==='paper'){
-        result='You lost.';
-    }
-    else if(computermove==='scissors'){
-        result='You win.';
-    }
-    alert(`You picked Rock. Computer picked ${computermove}. ${result}`);"
-    > Rock </button>
-
-    <button onclick="
-    const computermove=computerMove();
-    let result='';
-    if(computermove==='rock'){
-        result='You Win';
-    }
-    else if(computermove==='paper'){
-        result='Tie.';
-    }
-    else if(computermove==='scissors'){
-        result='You lost.';
-    }
-    alert(`You picked Paper. Computer picked ${computermove}. ${result}`);"
-    > Paper </button>
+        <button class="buttons" onclick="
+        computermove=computerMove();
+        
+        if(computermove==='rock'){
+            result='You Win';
+        }
+        else if(computermove==='paper'){
+            result='Tie.';
+        }
+        else if(computermove==='scissors'){
+            result='You lost.';
+        }
+        alert(`You picked Paper. Computer picked ${computermove}. ${result}`);"
+        > Paper </button>
 
 
-    <button onclick="
-    const computermove=computerMove();
-    let result='';
-    if(computermove==='rock'){
-        result='You Lost';
-    }
-    else if(computermove==='paper'){
-        result='You Win.';
-    }
-    else if(computermove==='scissors'){
-        result='Tie.';
-    }
-    alert(`You picked Scissor. Computer picked ${computermove}. ${result}`);"
-    > Scissor </button>
+        <button class="buttons" onclick="
+        computermove=computerMove();
+        
+        if(computermove==='rock'){
+            result='You Lost';
+        }
+        else if(computermove==='paper'){
+            result='You Win.';
+        }
+        else if(computermove==='scissors'){
+            result='Tie.';
+        }
+        alert(`You picked Scissor. Computer picked ${computermove}. ${result}`);"
+        > Scissor </button>
+    </div>
     <script src="rock_p_s.js">
         
         
