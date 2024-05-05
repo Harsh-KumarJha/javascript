@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <h1 style="margin-bottom: 100px; margin-top: 100px;">
+        Rock Paper Scissors
+
+    </h1>
+
+    <button onclick="
+    const computermove=computerMove();
+    let result='';
+    if(computermove==='rock'){
+        result='Tie';
+    }
+    else if(computermove==='paper'){
+        result='You lost.';
+    }
+    else if(computermove==='scissors'){
+        result='You win.';
+    }
+    alert(`You picked Rock. Computer picked ${computermove}. ${result}`);"
+    > Rock </button>
+
+    <button onclick="
+    const computermove=computerMove();
+    let result='';
+    if(computermove==='rock'){
+        result='You Win';
+    }
+    else if(computermove==='paper'){
+        result='Tie.';
+    }
+    else if(computermove==='scissors'){
+        result='You lost.';
+    }
+    alert(`You picked Paper. Computer picked ${computermove}. ${result}`);"
+    > Paper </button>
+
+
+    <button onclick="
+    const computermove=computerMove();
+    let result='';
+    if(computermove==='rock'){
+        result='You Lost';
+    }
+    else if(computermove==='paper'){
+        result='You Win.';
+    }
+    else if(computermove==='scissors'){
+        result='Tie.';
+    }
+    alert(`You picked Scissor. Computer picked ${computermove}. ${result}`);"
+    > Scissor </button>
+    <script src="rock_p_s.js">
+        
+        
+    </script>
+</body>
+</html>
