@@ -14,57 +14,16 @@
     <div class="button">
         
         <button class="buttons" 
-        onclick="
-        let computermove='';
-        let result='';
-        computermove=computerMove();
-        
-        if(computermove==='rock'){
-            result='Tie';
-        }
-        else if(computermove==='paper'){
-            result='You lost.';
-        }
-        else if(computermove==='scissors'){
-            result='You win.';
-        }
-        alert(`You picked Rock. Computer picked ${computermove}. ${result}`);"
-        > Rock </button>
+        onclick="        startGame('rock'); ">
+         Rock </button>
 
         <button class="buttons" onclick="
-        let computermove='';
-        let result='';
-        computermove=computerMove();
-        
-        if(computermove==='rock'){
-            result='You Win';
-        }
-        else if(computermove==='paper'){
-            result='Tie.';
-        }
-        else if(computermove==='scissors'){
-            result='You lost.';
-        }
-        alert(`You picked Paper. Computer picked ${computermove}. ${result}`);"
-        > Paper </button>
+        startGame('paper');" > Paper </button>
 
 
-        <button class="buttons" onclick="
-        let computermove='';
-        let result='';
-        computermove=computerMove();
-        
-        if(computermove==='rock'){
-            result='You Lost';
-        }
-        else if(computermove==='paper'){
-            result='You Win.';
-        }
-        else if(computermove==='scissors'){
-            result='Tie.';
-        }
-        alert(`You picked Scissor. Computer picked ${computermove}. ${result}`);"
-        > Scissor </button>
+        <button class="buttons" onclick="      startGame('scissors'); "> 
+        Scissor 
+        </button>
     </div>
     <script src="rock_p_s.js">
         
