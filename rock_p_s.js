@@ -1,9 +1,16 @@
-const score={
-    wins: 0,
-    loss: 0,
-    draw: 0
-}
-
+let score=JSON.parse(localStorage.getItem('score')) || 
+({ loss: 0,
+        wins: 0,
+        draw: 0
+        })
+        ;
+// if(!score){
+//     score={    
+//     loss:0,
+//     wins:0,
+//     draw:0
+//     };
+// }
 function startGame(playerMove){
     const computermove=computerMove();
     let result='';
@@ -52,8 +59,11 @@ function startGame(playerMove){
     else if(result==='You Lost.'){
        score.loss++;
     }
+
+    localStorage.setItem('score',JSON.stringify(score));
+
     alert(`You picked ${playerMove}. Computer picked ${computermove}. ${result}
-Won : ${score.wins}, Lost :${score.loss}, Tie :${score.draw}`); 
+Won : ${score.wins} , Lost : ${score.loss} , Tie : ${score.draw}`); 
 }
 
 function computerMove(){
@@ -76,4 +86,5 @@ function resetscore(){
     score.loss=0;
     score.wins=0;
     score.draw=0;
+    localStorage.removeItem('score');
 }
