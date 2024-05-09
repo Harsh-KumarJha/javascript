@@ -1,5 +1,6 @@
 body{
     background: linear-gradient(45deg,rgb(2, 15, 48),rgb(0, 0, 0));
+    
 }
 .Title{
     color:aliceblue;
@@ -9,6 +10,20 @@ body{
 .button{
     display: flex;
     justify-content: center;
+}
+.resetbutton{
+    
+    margin-top: 50px;
+    background-color:dimgray;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    border: none;
+    height: 100px;
+    width: 100px;
+    border-radius: 40%;
+    font-family: 'Roboto',"Arial", sans-serif;
+    cursor: pointer;
 }
 .buttons{
     background-color:dimgray;
